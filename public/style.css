@@ -3,23 +3,35 @@ body {
 }
 
 .tit {
-	position:absolute;
-    top:0; left:0;
+    top: 0; left: 0;
+	color: white;
 	text-align: center;
 	font-family: Arial, Helvetica, sans-serif;
+	height: 555px;
+    width: 975px;
 	border-radius: 25px; 
-    border: 2px solid black;
-    height: 500px
+    border: 2px solid white;
+
 }
 
-.vidContain {
-    position:relative;
-    display:inline-block;
-    margin:10px;
+.tit:before {
+	content: '';
+    display: block;
+    height: 483px;
 }
-.vid {
-    position: absolute; 
-    top: 0; left:0;
-    width: 100%; height: 100%; 
+
+.banner {
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    margin: 10px;
+}
+.banner video {
+	margin-top: 10px;
+	margin-left: 10px;
+    position: absolute;
+    align-self: center;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
     z-index: -1;
 }
